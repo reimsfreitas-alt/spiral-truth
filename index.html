@@ -6,7 +6,7 @@
   <title>Spiral Truth V1.1.1 — Founder</title>
   <style>
     body{margin:0;background:#090909;color:#f1eee7;font-family:Arial,sans-serif;line-height:1.6}
-    main{max-width:900px;margin:auto;padding:70px 24px}
+    main{max-width:1100px;margin:auto;padding:70px 24px}
     .eyebrow{color:#c9a45c;letter-spacing:2px;text-transform:uppercase;font-size:13px}
     h1{font-size:clamp(38px,7vw,72px);line-height:1.05;margin:20px 0}
     h2{color:#c9a45c;margin-top:55px}
@@ -15,6 +15,12 @@
     .price{font-size:42px;color:#f1eee7;font-weight:bold}
     .button{display:inline-block;margin-top:20px;padding:17px 26px;background:#c9a45c;color:#090909;text-decoration:none;font-weight:bold;border-radius:6px}
     .small{font-size:14px;color:#969188}
+    .videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:25px}
+    .video{border:1px solid #39352e;border-radius:12px;overflow:hidden;background:#050505}
+    video{display:block;width:100%;background:#000;aspect-ratio:16/9}
+    .caption{padding:18px}
+    .caption strong{display:block;color:#f1eee7;margin-bottom:6px}
+    @media(max-width:760px){.videos{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -22,6 +28,7 @@
     <div class="eyebrow">Spiral Codes · Founder Edition</div>
     <h1>Spiral Truth V1.1.1</h1>
     <p>Um laboratório local para investigar a relação entre intenção, execução, observação e verificação de resultados.</p>
+
     <div class="box">
       <h2>O que você recebe</h2>
       <ul>
@@ -34,6 +41,7 @@
         <li>Acesso à edição Founder / Proof-of-Concept.</li>
       </ul>
     </div>
+
     <div class="box">
       <h2>O que esta versão não promete</h2>
       <ul>
@@ -45,6 +53,7 @@
         <li>Não utiliza, nesta versão, assinatura Ed25519 operacional.</li>
       </ul>
     </div>
+
     <div class="box">
       <h2>Founder / Proof-of-Concept</h2>
       <p>Entre na primeira edição do Spiral Truth e explore os mecanismos de registro, integridade, confronto e verificação em um ambiente local e transparente.</p>
@@ -52,6 +61,22 @@
       <p class="small">Pagamento único · Edição Founder</p>
       <a class="button" href="https://buy.stripe.com/7sY3co8Yz488ekf0zFbbG0a" target="_blank" rel="noopener noreferrer">Entrar como Founder — R$197</a>
     </div>
+
+    <div class="box">
+      <h2>Veja a prova em movimento</h2>
+      <p>Os vídeos foram selecionados para esta vitrine pela aderência ao papel do Truth: distinguir execução registrada, observação e aquilo que a evidência realmente permite afirmar.</p>
+      <div class="videos">
+        <article class="video">
+          <video controls playsinline preload="metadata" src="https://spiral-lite-media-host-sl35v8.v2.appdeploy.ai/resources/gemini_generated_video_6C1F3F5A-1.mp4"></video>
+          <div class="caption"><strong>Effect Verified</strong><span class="small">A execução não é a mesma coisa que a atestação de que funcionou.</span></div>
+        </article>
+        <article class="video">
+          <video controls playsinline preload="metadata" src="https://spiral-lite-media-host-sl35v8.v2.appdeploy.ai/resources/gemini_generated_video_0BBA3742.mp4"></video>
+          <div class="caption"><strong>Authorized → Execution → Verdict → Receipt</strong><span class="small">A cadeia visual conecta autorização, execução, veredito e recibo.</span></div>
+        </article>
+      </div>
+    </div>
+
     <h2>Uma experiência de verificação, não uma promessa de mágica</h2>
     <p>O Spiral Truth foi concebido para tornar explícita a diferença entre uma intenção declarada, uma execução registrada, uma observação e um resultado efetivamente verificado.</p>
     <p class="small">Spiral Codes · Spiral Truth V1.1.1 · Founder / Proof-of-Concept</p>
